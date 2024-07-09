@@ -1,0 +1,329 @@
+.promo-carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .promo-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .promo-slide.active {
+    opacity: 1;
+  }
+  
+  .promo-text {
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    color: #fff;
+    text-align: left;
+    max-width: 300px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .promo-text h1 {
+    font-size: 2rem;
+    margin: 0 0 10px;
+  }
+  
+  .promo-text h2 {
+    font-size: 1.5rem;
+    margin: 0 0 20px;
+  }
+  
+  .promo-text input[type="search"] {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .promo-text button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .promo-text button:hover {
+    background-color: #0056b3;
+  }
+  
+  .allcategories {
+    font-size: 3rem;
+    padding: 2rem;
+  }
+  
+  .categories {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    background-color: #337ab7;
+    color: white;
+    height: 7rem;
+    line-height: 7rem;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .categories-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .categories-header {
+    display: flex;
+    float: right;
+  }
+  
+  .header-category {
+    padding: 1rem;
+  }
+  
+  .category-card {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  
+  .category-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding-top: 10rem;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .product-container {
+    background-color: #007bff;
+  }
+  
+  .product-text {
+    color: black;
+  }
+  
+  /* Timer Box Styles */
+  .timer-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    min-width: 60px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 5px;
+  }
+  
+  .timer-box span {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .timer-box span:last-child {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  /* Deals of the Week Section */
+  .dealsofweeksection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  /* Individual Deal Card */
+  .dealsofweak {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+  }
+  
+  .dealsofweak:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .countdown {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .headerdeals {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+  }
+  
+  .products-list-category {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+  }
+  
+  .product-category {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .product-list {
+    padding: 20px;
+  }
+  
+  .products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .products h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .rating {
+    display: flex;
+    gap: 5px;
+    margin: 10px 0;
+  }
+  
+  .star {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .star.filled {
+    color: #ffcc00;
+  }
+  
+  .star:hover {
+    color: #ff9900;
+  }
+  
+  /* Cost and Button Container */
+  .cost-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+  }
+  
+  .cost {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .add {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .add:hover {
+    background-color: #218838;
+  }
+  
+  .add svg {
+    margin-right: 5px;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantity-controls button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .quantity-controls button:hover {
+    background-color: #218838;
+  }
+  
+  .quantity {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  
+  .banner-background {
+    background-color: #337ab7;
+    width: 100%;
+    height: 30rem;
+  }

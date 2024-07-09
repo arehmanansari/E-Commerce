@@ -1,0 +1,140 @@
+/* Product Card Styles */
+
+.allproducts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 280px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: 150px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Company Name Styles */
+
+.company-name {
+    font-size: 14px;
+    color: #555;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Product Name Styles */
+
+.product-name {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+}
+
+/* Rating Stars Styles */
+
+.rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.star {
+    font-size: 18px;
+    margin-right: 5px;
+    cursor: pointer;
+    color: #ccc;
+    transition: color 0.3s;
+}
+
+.star:hover,
+.star.filled {
+    color: #ffd700;
+}
+
+/* Cost and Add Button Styles */
+
+.cost-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.cost {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.add {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.add:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+.add svg {
+    margin-right: 5px;
+}
+
+/* Category Texts Styles */
+
+.category-texts {
+    height: 20rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding-top: 10rem;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+    .product-card {
+        width: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-card {
+        width: 200px;
+    }
+}

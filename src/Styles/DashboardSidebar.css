@@ -1,0 +1,120 @@
+.dashboardsidebar {
+    width: 250px;
+    background-color: #333;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    transition: width 0.5s; /* add transition effect */
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .dashboardsidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dashboardsidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .dashboardsidebar a {
+    display: block;
+    padding: 8px 0;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .dashboardsidebar a:hover {
+    color: #fff;
+  }
+  
+  .dashboardsidebar details {
+    margin-bottom: 10px;
+  }
+  
+  .dashboardsidebar summary {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #555;
+    color: #ccc;
+  }
+  
+  .dashboardsidebar summary:hover {
+    background-color: #444;
+  }
+  
+  .dashboardsidebar ul ul {
+    padding-left: 20px;
+  }
+  
+  .dashboardsidebar p {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #aaa;
+  }
+  
+  .dashboardsidebar.active {
+    background-color: #555;
+  }
+  
+  .dashboardsidebar.active:hover {
+    background-color: #444;
+  }
+  
+  /* Collapse button styles */
+  .collapse-button {
+    font-size: 16px;
+    cursor: pointer;
+    color: #ccc;
+    background-color: transparent;
+    border: none;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .collapse-button:hover {
+    color: #fff;
+  }
+  
+  /* Collapsed state */
+  .dashboardsidebar.collapsed {
+    width: 50px;
+  }
+  
+  .dashboardsidebar.collapsed ul,
+  .dashboardsidebar.collapsed p,
+  .dashboardsidebar.collapsed details {
+    display: none;
+  }
+  
+  /* Nested details */
+  .dashboardsidebar ul details ul {
+    padding-left: 30px;
+  }
+  
+  /* Additional styling */
+  .dashboardsidebar a.active {
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  .dashboardsidebar a.active:hover {
+    text-decoration: underline;
+  }
+  
+  .dashboardsidebar hr {
+    border-color: #555;
+  }
+  
+  .dashboardsidebar .section-heading {
+    font-size: 14px;
+    color: #aaa;
+    margin-top: 15px;
+  }
+  
+  .dashboardsidebar .section-heading + ul {
+    padding-top: 10px;
+  }
+  
+  
