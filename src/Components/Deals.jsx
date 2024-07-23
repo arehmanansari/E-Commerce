@@ -1,4 +1,6 @@
-import { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { FaCartPlus, FaMinus, FaPlus } from "react-icons/fa";
+import "../Styles/Deals.css"
 
 export const DealsOfWeakSection = () => {
     const [quantity, setQuantity] = useState(0);
@@ -25,7 +27,7 @@ export const DealsOfWeakSection = () => {
     };
 
     const calculateTimeLeft = () => {
-        const difference = +new Date("2024-07-12") - +new Date();
+        const difference = +new Date("2024-10-1") - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {
@@ -205,7 +207,7 @@ export const DealsOfDaySection = () => {
         }
     };
     const calculateTimeLeft = () => {
-        const difference = +new Date("2024-07-12") - +new Date();
+        const difference = +new Date("2024-10-1") - +new Date();
         let timeLeft = {};
 
         if (difference > 0) {

@@ -1,0 +1,97 @@
+.slider-section {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription-card {
+    background-color: #6DABA1;
+    height: 32rem;
+    width: 25rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    margin: 20px;
+    text-align: center;
+    padding: 1rem;
+}
+
+.subscription-card:hover {
+    transform: scale(1.05);
+    background-color: #4D8777;
+}
+
+strong {
+    font-size: 2rem;
+}
+
+.buy-btn {
+    background-color: #8DC4BA;
+    transition: transform 0.5s;
+    border: none;
+    border-radius: 16px;
+    width: 100px;
+    height: 2rem;
+}
+
+.buy-btn:hover {
+    background-color: #79B8A9;
+    transform: scale(1.05);
+}

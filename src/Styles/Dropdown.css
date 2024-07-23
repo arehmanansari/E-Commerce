@@ -1,0 +1,52 @@
+.dropdown-container {
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-list {
+    cursor: pointer;
+    position: absolute;
+    background-color: #fff;
+    list-style: none;
+}
+
+.megamenu-summary {
+    font-weight: bold;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.megamenu {
+    position: absolute;
+    width: 711%;
+    max-width: 1000px; /* Limiting maximum width */
+    height: 26rem; /* Fixed height */
+    overflow-y: auto; /* Enable scrolling if content exceeds height */
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow for elevation */
+  }
+  
+  .megamenu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .megamenu-list li {
+    width: 25%; /* Each item takes 25% width (four items per row) */
+    padding: 10px;
+    text-align: center;
+    border-right: 1px solid #ccc; /* Adding vertical divider */
+    border-bottom: 1px solid #ccc; /* Adding horizontal divider */
+  }
+  
+  .megamenu-list li:last-child {
+    border-right: none; /* Remove border on the last item in a row */
+  }
+  
+  /* Optional: Hover effect */
+  .megamenu-list li:hover {
+    background-color: #f0f0f0;
+  }

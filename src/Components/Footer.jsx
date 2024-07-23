@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="leftside">
-        <p className="logo">Logo</p>
+        <Link to={"/"} className="logo">Mystiq</Link>
         <p className="address-h1">Address:</p>
         <h1 className="address-h2">
           Perfume Chowk,Block-17,Gulistan-e-Johor,Karachi,Pakistan
@@ -36,7 +36,7 @@ const Footer = () => {
           <Link to="/wishlist">WishList</Link>
           <Link to="/track">Track My Order</Link>
           <Link to="/help">Help</Link>
-          <Link to="/delivery">Shipping Details</Link>
+          <Link to="/subscription">Subscription</Link>
           <Link to="/compare">Compare Products</Link>
         </div>
         <div>
@@ -45,7 +45,7 @@ const Footer = () => {
           <Link to="/affiliate">Affiliate Program</Link>
           <Link to="/farm-business">Farm Business</Link>
           <Link to="/farm-career">Farm Career</Link>
-          <Link to="/suplliers">Our Suppliers</Link>
+          <Link to="/suppliers">Our Suppliers</Link>
           <Link to="/accesibility">Accessibility</Link>
           <Link to="/promotions">Promotions</Link>
         </div>

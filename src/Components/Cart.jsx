@@ -18,7 +18,7 @@ const Cart = () => {
           </Link>
         </button>  
       </div>
-      <div className="mycart">
+      {/* <div className="mycart">
         <div className="my-cart">My Cart</div>
         <div className="items">
           <p>Sub Total</p> <p className="right-side-checkout">lorem</p>
@@ -36,7 +36,7 @@ const Cart = () => {
           <p className="right-side-checkout"> Lorem</p>
         </div>
         <button className="btn-checkout">Proceed To Checkout</button>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -125,7 +125,13 @@ import Yogurt from "../Assets/yogurt-lassi.webp";
 
 export const AllProducts = [
   {
-    img:UHTMilk,
+    img:Vegetables,
+  }
+]
+
+export const MoreProducts = [
+  {
+    img:Yogurt,
   }
 ]
 
@@ -141,25 +147,6 @@ export const slides = [
     title: "Don't Miss Amazing Grocery Deals",
     subtitle: "Sign Up For The Daily Newsletter",
     placeholder: "Your E-Mail Address",
-  },
-];
-
-export const YoungPeopleChoice = [
-  {
-    img: Buscuits,
-    title: "Biscuits & Cookies",
-  },
-  {
-    img: Chips,
-    title: "Chips",
-  },
-  {
-    img: Chocolate,
-    title: "Chocolates",
-  },
-  {
-    img: Coldrinks,
-    title: "Cold Drinks",
   },
 ];
 

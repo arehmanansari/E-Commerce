@@ -46,6 +46,7 @@ const Sidebar = () => {
             <input
               type="range"
               min="500"
+              step="50"
               max="5500"
               value={minPrice}
               onChange={handleMinChange}
@@ -53,6 +54,7 @@ const Sidebar = () => {
             <input
               type="range"
               min="500"
+              step="50"
               max="5500"
               value={maxPrice}
               onChange={handleMaxChange}

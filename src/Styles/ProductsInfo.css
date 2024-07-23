@@ -1,0 +1,209 @@
+/* ProductsInfo.css */
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.section {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.heading {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.stars {
+    color: #ffd700;
+    margin-bottom: 10px;
+}
+
+.cost {
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.information {
+    font-size: 1.3rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.sizes {
+    margin-bottom: 20px;
+}
+
+.size {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+/* Cost and Add Button Styles */
+
+.cost-and-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-top: 1px solid #ddd;
+}
+
+.cost {
+    font-size: 18px;
+    padding-right: 4rem;
+    padding-top: 1rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.add {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.add:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+.add svg {
+    margin-right: 5px;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-controls button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+    padding: 0 10px;
+}
+
+.quantity {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.quantity-controls .plus {
+    color: #4caf50;
+}
+
+.quantity-controls .minus {
+    color: #f44336;
+}
+
+.extra-info {
+    font-size: 20px;
+}
+
+.img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    width: 700px;
+    border: 1px solid black;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-container>div {
+    width: 700px;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 10px;
+}
+
+.mini-image-container {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 16px;
+}
+
+.mini-image {
+    height: 200px;
+    width: 350px;
+}
+
+.add-button {
+    background-color: white;
+    font-size: 2rem;
+    border: none;
+    float: left;
+}
+
+.related-p {
+    font-size: 3rem;
+    padding-left: 2rem;
+    border-bottom: 1px solid #4caf50;
+    width: 400px;
+}
+
+.related-products {
+    display: flex;
+}
+
+.info-heading {
+    border: 1px solid #4caf50;
+    border-radius: 40%;
+    font-size: 1.2rem;
+    padding: 7px;
+    transition: transform 0.2s;
+}
+
+.info-heading:hover {
+    transform: scale(1.05);
+}
+
+.desc-heading {
+    padding: 1rem;
+    display: flex;
+    width: 30rem;
+    justify-content: space-between;
+}
+
+.info-content {
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.desc-info-heading {
+    display: flex;
+}
+
+.li-header {
+    padding-left: 3rem;
+}
+
+.additionalcontent-box {
+  border:  1px solid black;  
+}

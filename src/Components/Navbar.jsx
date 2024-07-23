@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { FaArrowsSpin } from "react-icons/fa6";
+import { IoMdHeartEmpty } from "react-icons/io";
 import {
   BrowseAllCategoriesDropdown,
   LocationDropdown,
@@ -7,19 +9,37 @@ import {
   CurrencyDropdown,
   MegaMenuDropdown,
   VendorsDropdown,
+  PagesDropdown,
+  HomeDropdown,
+  BlogDropdown,
   ShopDropdown,
 } from "./Dropdown";
-import { NavLink, Nav } from "react-bootstrap";
-import "../Styles/Navbar.css"
+import "../Styles/Navbar.css";
 
 const Navbar = () => {
+  const [searchQuery, setSearchQuery] = useState("");
+
+  const handleSearchChange = (e) => {
+    setSearchQuery(e.target.value);
+  };
+
+  const handleSearchSubmit = (e) => {
+    e.preventDefault();
+    console.log("Performing search for:", searchQuery);
+    // Example: Redirect to search results page
+    // history.push(`/search?q=${encodeURIComponent(searchQuery)}`);
+  };
+
+  const handleAddToWishlist = (productId) => {
+    console.log(`Added product ${productId} to wishlist`);
+  };
+
   return (
     <nav className="navbar">
       <div className="top-nav">
         <p className="nav-link">
           About | My Account | WishList | Order Tracking
         </p>
-        <p className="nav-link">Super Value Deals - Save More With Coupons</p>
         <p className="nav-link">Need Help? | Call Us</p>
         <div className="language-dropdown">
           <LanguageDropdown />
@@ -27,39 +47,62 @@ const Navbar = () => {
         <div className="currency-dropdown">
           <CurrencyDropdown />
         </div>
-        <Nav>
-          <NavLink href="/login">Log In</NavLink>
-          <NavLink href="/signup">Sign Up</NavLink>
-        </Nav>
+        <div className="location-dropdown">
+          <LocationDropdown />
+        </div>
       </div>
       <div className="middle-nav">
-        <div className="logo">Mystiq</div>
+        <Link to={"/"} className="logo">
+          Mystiq
+        </Link>
         <div className="search-bar">
-          <form>
-            <input type="search" className="search-input" />
-            <button className="search-button">Search</button>
+          <form onSubmit={handleSearchSubmit}>
+            <input
+              type="search"
+              className="search-input"
+              value={searchQuery}
+              onChange={handleSearchChange}
+              placeholder="Search products..."
+            />
+            <button type="submit" className="search-button">
+              Search
+            </button>
           </form>
         </div>
+        <Link to={"/categories"}></Link>
         <div className="right-side">
-          <div className="location-dropdown">
-            <LocationDropdown />
-          </div>
           <div className="nav-links">
-            Compare | WishList |<Link to={"/cart"}> Cart</Link>| Account
+            <Link to={"/categories"}>Categories</Link>
+            <FaArrowsSpin />
+            <Link to={"/compare"}>Compare</Link>
+            <IoMdHeartEmpty
+              onClick={() => handleAddToWishlist("productId123")}
+              style={{ cursor: "pointer" }}
+            />
+            <Link to={"/wishlist"}>WishList</Link>
+            <Link to={"/cart"}>Cart</Link>
+            <Link to={"/account"}>Account</Link>
+            <Link to={"/login"}>
+              Login
+            </Link>
           </div>
         </div>
       </div>
       <div className="nav-section">
         <BrowseAllCategoriesDropdown />
         <ul className="main-nav">
-          <Link to={"/deals"}>Deals</Link>
-          <Link to={"/"}>Home</Link>
-          <Link to={"/about"}>About</Link>
+          <Link to={"/deals"} className="nav-link">
+            Deals
+          </Link>
+          <HomeDropdown />
+          <MegaMenuDropdown />
           <ShopDropdown />
           <VendorsDropdown />
-          <MegaMenuDropdown />
-          <Link to={"/blog"}>Blog</Link>
-          <Link to={"/contact"}>Contact</Link>
+          <BlogDropdown />
+          <PagesDropdown />
+          <Link to={"/about"} className="nav-link">
+            About
+          </Link>
         </ul>
       </div>
     </nav>

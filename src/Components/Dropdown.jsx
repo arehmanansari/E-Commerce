@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "@coreui/coreui/dist/css/coreui.min.css";
 import {
   CDropdown,
@@ -6,38 +7,98 @@ import {
   CDropdownMenu,
   CDropdownItem,
 } from "@coreui/react";
+import "../Styles/Dropdown.css"
 
 export const ShopDropdown = () => {
-  
+
   return (
     <div>
-      <details>
+      <details className="dropdown-container">
         <summary>Shop</summary>
-        <ul className="ul-list">
-          <li>Shop Grid - Right Sidebar</li>
-          <li>Shop Grid - Left Sidebar</li>
-          <li>Shop List - Right Sidebar</li>
-          <li>Shop List - Left Sidebar</li>
-          <li> Shop - Wide</li>
-          <li>Single Product</li>
-          <li>Shop - Filter</li>
-          <li>Shop - WishList</li>
-          <li>Shop - Cart</li>
-          <li>Shop - Checkout</li>
-          <li>Shop - Compare</li>
-          <li>Shop Invoice</li>
+        <ul className="dropdown-list" style={{ width: "410%", padding:"1rem"}}>
+          <li><Link to={"/shop-grid-right-sidebar"}>Shop Grid - Right Sidebar</Link></li>
+          <li><Link to={"/shop-grid-left-sidebar"}>Shop Grid - Left Sidebar</Link></li>
+          <li><Link to={"/shop-links-right-sidebar"}>Shop Links - Right Sidebar</Link></li>
+          <li><Link to={"/shop-links-left-sidebar"}>Shop Links - Left Sidebar</Link></li>
+          <li><Link to={"/shop-wide"}>Shop - Wide</Link></li>
+          <li><Link to={"/single-product"}>Single Product</Link></li>
+          <li><Link to={"/shop-filter"}>Shop - Filter</Link></li>
+          <li><Link to={"/shop-wishlist"}>Shop - Wishlist</Link></li>
+          <li><Link to={"/shop-cart"}>Shop - Cart</Link></li>
+          <li><Link to={"/shop-checkout"}>Shop - Checkout</Link></li>
+          <li><Link to={"/shop-compare"}>Shop - Compare</Link></li>
+          <li><Link to={"/shop-invoice"}>Shop - Invoice</Link></li>
         </ul>
       </details>
     </div>
   );
 };
 
+export const BlogDropdown = () => {
+  return (
+    <div>
+      <details className="dropdown-container">
+        <summary>Blog</summary>
+        <ul className="dropdown-list" style={{ width: "340%", padding:"1rem"}}>
+          <li>Blog Category Grid</li>
+          <li>Blog Category List</li>
+          <li>Blog Category Big</li>
+          <li>Blog Category Wide</li>
+        </ul>
+      </details>
+    </div>
+  )
+}
+
+export const HomeDropdown = () => {
+  return (
+    <div>
+      <details className="dropdown-container">
+        <summary>Home</summary>
+        <ul className="dropdown-list" style={{ width: "160%", padding: "1rem" }}>
+          <li>
+            <Link to={"/"}>Home-1</Link>
+          </li>
+          <li>
+            <Link to={"/2"}>Home-2</Link>
+          </li>
+          <li>
+            <Link to={"/3"}>Home-3</Link>
+          </li>
+          <li>
+            <Link to={"/4"}>Home-4</Link>
+          </li>
+        </ul>
+      </details>
+    </div>
+  )
+}
+
+export const PagesDropdown = () => {
+  return (
+    <div>
+      <details className="dropdown-container">
+        <summary>Pages</summary>
+        <ul className="dropdown-list" style={{padding:"1rem", width:"200%"}}>
+          <li>About Us</li>
+          <li>My Account</li>
+          <li>Login</li>
+          <li>Register</li>
+          <li>Purchase Guide</li>
+          <li>Privacy & Policy</li>
+          <li>Terms Of Service</li>
+        </ul>
+      </details>
+    </div>
+  )
+}
+
 export const VendorsDropdown = () => {
   return (
     <div>
-      <details>
+      <details className="dropdown-container">
         <summary>Vendors</summary>
-        <ul>
+        <ul className="dropdown-list" style={{ width: "240%", padding: "1rem" }}>
           <li>Vendors Grid</li>
           <li>Vendors List</li>
           <li>Vendors Details 01</li>
@@ -53,35 +114,33 @@ export const VendorsDropdown = () => {
 export const MegaMenuDropdown = () => {
   return (
     <div>
-      <details>
-        <summary>Mega Menu</summary>
+      <details className="dropdown-container">
+        <summary className="megemanu-summary">MegaMenu</summary>
         <div className="megamenu">
-          <ul>
-            <li>Fruits & Vegetables</li>
-            <li>BreakFast & Dairy</li>
-            <li>Meat & SeaFood</li>
+          <ul className="megamenu-list">
+            <div style={{ display: "flex" }}>
+              <h1>Fruits & Vegetables</h1>
+              <h1>BreakFast & Dairy</h1>
+              <h1>Meat & SeaFood</h1>
+            </div>
             <li>Meat & Poultry</li>
             <li>Fresh Vegetabeles</li>
             <li>Herbs & Spices</li>
             <li>Cuts & Sprouts</li>
             <li>Exotic Fruit & Veggies</li>
-            <li>Pacakaged Prouce</li>
-          </ul>
-          <ul>
-            <li>Cheese</li>
+            <li>Pacakaged Produce</li>
             <li>Milk & Flavoured Milk</li>
             <li>Butter & Margarine</li>
             <li>Eggs Substitute</li>
             <li>Marmaldes</li>
             <li>Sour Cream</li>
-          </ul>
-          <ul>
+            <li>Cheese</li>
             <li>BreakFast Sausages</li>
             <li>Dinner Sausages</li>
             <li>Chicken</li>
             <li>Sliced Deli Meat</li>
             <li>Wild Caught Fillets</li>
-            <li>Crabs & ShellFish</li>
+            <li>Crab & sellFish</li>
           </ul>
         </div>
       </details>
